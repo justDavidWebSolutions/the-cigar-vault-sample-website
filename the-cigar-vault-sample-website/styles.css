@@ -2,6 +2,8 @@
     --link-background: #514600;
     --link-text: #F5F5F5;
     --text-highlight: #FFEB39;
+    --anchor-text: #4A4400;
+    --anchor-text-highlight: #A58600;
 }
 
 html {
@@ -17,7 +19,7 @@ html {
 
 body {
     background: #EFCE00;
-    color: var(--link-text)
+    color: var(--link-background);
 }
 
 .navbar {
@@ -87,4 +89,43 @@ body {
 
 .background-image-container:hover .background-image-text {
     opacity: 1;
+}
+
+.anchor-text {
+    color: var(--anchor-text);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.anchor-text:hover {
+    color: var(--link-text);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.footer-text-container {
+    max-width: 330px;
+}
+
+.scroll-to-top {
+    border-radius: 2rem;
+    background: var(--link-background);
+    color: var(--text-highlight);
+    padding: 1rem;
+}
+
+.scroll-to-top:hover {
+    background: var(--anchor-text-highlight);
+    color: var(--link-background);
 }

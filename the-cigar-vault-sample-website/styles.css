@@ -1,0 +1,90 @@
+:root {
+    --link-background: #514600;
+    --link-text: #F5F5F5;
+    --text-highlight: #FFEB39;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display';
+}
+
+body {
+    background: #EFCE00;
+    color: var(--link-text)
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #514600;
+}
+
+.logo-link-container {
+    padding: 10px 20px;
+}
+
+.logo-link-container img {
+    max-width: 40px;
+    aspect-ratio: 1 / 1;
+}
+
+.navbar-links-container {
+    display: flex;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.navbar-link a {
+    text-decoration: none;
+}
+
+.navbar-link p {
+    font-size: 0.75rem;
+    color: var(--link-text);
+}
+
+.navbar-link p:hover {
+    color: var(--text-highlight);
+}
+
+.background-image-container {
+    padding-top: 10px;
+}
+
+.background-image-container img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    backface-visibility: hidden;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+.background-image-text {
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transition: 0.5s ease;
+    text-align: center;
+    opacity: 0;
+}
+
+.background-image-container:hover img {
+    opacity: 0.5;
+}
+
+.background-image-container:hover .background-image-text {
+    opacity: 1;
+}

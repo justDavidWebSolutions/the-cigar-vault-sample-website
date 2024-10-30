@@ -58,7 +58,7 @@ body {
 }
 
 .background-image-container {
-    padding-top: 10px;
+    padding-top: 26px;
 }
 
 .background-image-container img {
@@ -75,7 +75,7 @@ body {
 .background-image-text {
     position: absolute;
     color: var(--link-text);
-    top: 32%;
+    top: 34%;
     left: 28%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -94,15 +94,17 @@ body {
 
 .story-container {
     display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
     padding-left: 2rem;
+    margin-right: 26px;
 }
 
 .story-head-container {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
 }
 
 .story-container h1 {
@@ -119,6 +121,12 @@ body {
     padding-top: 0.5rem;
     border-radius: 4rem;
     filter: drop-shadow(1rem 1rem 10px #A58600);
+}
+
+.story-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .anchor-text {

@@ -74,6 +74,7 @@ body {
 
 .background-image-text {
     position: absolute;
+    color: var(--link-text);
     top: 32%;
     left: 28%;
     transform: translate(-50%,-50%);
@@ -89,6 +90,35 @@ body {
 
 .background-image-container:hover .background-image-text {
     opacity: 1;
+}
+
+.story-container {
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+}
+
+.story-head-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.story-container h1 {
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+.our-story-with-p1 {
+    width: 180px;
+}
+
+.story-head-container img {
+    max-width: 200px;
+    padding-top: 0.5rem;
+    border-radius: 4rem;
+    filter: drop-shadow(1rem 1rem 10px #A58600);
 }
 
 .anchor-text {
@@ -107,6 +137,7 @@ body {
     align-items: center;
     padding-left: 20px;
     padding-right: 40px;
+    padding-bottom: 20px;
 }
 
 .footer p {

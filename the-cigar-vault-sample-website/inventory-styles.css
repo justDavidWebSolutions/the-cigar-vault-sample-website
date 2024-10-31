@@ -51,6 +51,7 @@ body {
 .navbar-link p {
     font-size: 0.75rem;
     color: var(--link-text);
+    transition-duration: 200ms;
 }
 
 .navbar-link p:hover {
@@ -105,6 +106,7 @@ body {
 .inventory-container h3 {
     font-size: 1rem;
     padding-bottom: 1.5rem;
+    text-align: center;
 }
 
 .inventory-card {
@@ -115,10 +117,16 @@ body {
     max-width: 450px;
     border-radius: 2rem;
     margin: 1rem;
+    padding: 1rem;
+    transition-duration: 200ms;
 }
 
 .inventory-card:hover {
     background: var(--anchor-text-highlight);
+}
+
+.inventory-card:hover h3 {
+    color: var(--link-text);
 }
 
 .inventory-card img {
@@ -140,10 +148,18 @@ body {
     flex-wrap: wrap;
 }
 
+.flavor {
+    border-radius: 1.3rem;
+    padding: 0.69rem;
+    color: var(--link-text);
+    background: var(--link-background);
+}
+
 .anchor-text {
     color: var(--anchor-text);
     font-size: 0.9rem;
     text-decoration: none;
+    transition-duration: 200ms;
 }
 
 .anchor-text:hover {
@@ -173,6 +189,7 @@ body {
     background: var(--link-background);
     color: var(--text-highlight);
     padding: 1rem;
+    transition-duration: 200ms;
 }
 
 .scroll-to-top:hover {

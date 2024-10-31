@@ -57,10 +57,6 @@ body {
     color: var(--text-highlight);
 }
 
-.background-image-container {
-    padding-top: 26px;
-}
-
 .background-image-container img {
     display: block;
     position: relative;
@@ -69,27 +65,18 @@ body {
     aspect-ratio: 16 / 9;
     backface-visibility: hidden;
     transition: 0.5s ease;
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .background-image-text {
     position: absolute;
     color: var(--link-text);
-    top: 34%;
-    left: 28%;
+    top: 23%;
+    left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-    transition: 0.5s ease;
+    font-size: 1.5rem;
     text-align: center;
-    opacity: 0;
-}
-
-.background-image-container:hover img {
-    opacity: 0.5;
-}
-
-.background-image-container:hover .background-image-text {
-    opacity: 1;
 }
 
 .story-container {
@@ -97,7 +84,7 @@ body {
     flex-direction: column;
     gap: 1.2rem;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     padding-left: 2rem;
     margin-right: 26px;
 }
@@ -167,4 +154,115 @@ body {
 .scroll-to-top:hover {
     background: var(--anchor-text-highlight);
     color: var(--link-background);
+}
+
+@media (min-width: 640px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .navbar-links-container {
+        gap: 2rem;
+    }
+
+    .navbar-link p {
+        font-size: 1rem;
+    }
+
+    .anchor-text {
+        font-size: 1.1rem;
+    }
+
+    .background-image-text {
+        font-size: 3rem;
+        top: 34%;
+        left: 50%;
+    }
+
+    .story-container {
+        padding: 2rem;
+        padding-bottom: 6rem;
+        gap: 2rem;
+    }
+
+    .story-head-container {
+        align-items: center;
+    }
+
+    .story-head-container img {
+        max-width: 250px;
+    }
+
+    .our-story-with-p1 {
+        width: 400px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer-text-container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background-image-container img {
+        max-height: 500px;
+    }
+
+    .logo-link-container {
+        padding-left: 2rem;
+    }
+
+    .logo-link-container img {
+        max-width: 50px;
+    }
+
+    .navbar-links-container {
+        gap: 3rem;
+        padding-right: 3rem;
+    }
+
+    .navbar-link p {
+        font-size: 1.2rem;
+    }
+
+    .background-image-text {
+        font-size: 3.5rem;
+        top: 38%;
+        left: 50%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .story-container {
+        padding-top: 6rem;
+        padding-bottom: 9rem;
+        gap: 6rem;
+        text-align: center;
+    }
+
+    .story-head-container {
+        justify-content: space-evenly;
+    }
+
+    .story-head-container img {
+        max-width: 350px;
+    }
+
+    .story-paragraphs {
+        gap: 2.5rem;
+    }
 }

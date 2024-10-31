@@ -1,0 +1,203 @@
+:root {
+    --link-background: #514600;
+    --link-text: #F5F5F5;
+    --text-highlight: #FFEB39;
+    --anchor-text: #4A4400;
+    --anchor-text-highlight: #A58600;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display';
+}
+
+body {
+    background: #EFCE00;
+    color: var(--link-background);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #514600;
+}
+
+.logo-link-container {
+    padding: 10px 20px;
+}
+
+.logo-link-container img {
+    max-width: 40px;
+    aspect-ratio: 1 / 1;
+}
+
+.navbar-links-container {
+    display: flex;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.navbar-link a {
+    text-decoration: none;
+}
+
+.navbar-link p {
+    font-size: 0.75rem;
+    color: var(--link-text);
+}
+
+.navbar-link p:hover {
+    color: var(--text-highlight);
+}
+
+.smoke-with-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.buds-and-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buds-and-socials img {
+    max-width: 225px;
+    border-radius: 4rem;
+    aspect-ratio: 1 / 1;
+    filter: drop-shadow(1rem 1rem 10px #A58600);
+}
+
+.header-and-socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-link {
+    font-size: 2rem;
+}
+
+.social-link a:visited {
+    color: var(--link-background);
+}
+
+.social-link:hover {
+    color: var(--anchor-text-highlight);
+}
+
+.google-map iframe {
+    width: 420px;
+    height: 234px;
+}
+
+.anchor-text {
+    color: var(--anchor-text);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.anchor-text:hover {
+    color: var(--link-text);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.footer-text-container {
+    max-width: 330px;
+}
+
+@media (min-width: 640px) {
+    .navbar-links-container {
+        gap: 2rem;
+    }
+
+    .navbar-link p {
+        font-size: 1rem;
+    }
+
+    .anchor-text {
+        font-size: 1.1rem;
+    }
+
+    .buds-and-socials {
+        gap: 5rem;
+    }
+
+    .buds-and-socials h2 {
+        font-size: 2rem;
+    }
+
+    .social-link {
+        font-size: 2.5rem;
+    }
+
+    .buds-and-socials img {
+        max-width: 300px;
+    }
+
+    .google-map iframe {
+        width: 650px;
+        height: 300px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer-text-container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-link-container {
+        padding-left: 2rem;
+    }
+
+    .logo-link-container img {
+        max-width: 50px;
+    }
+
+    .navbar-links-container {
+        gap: 3rem;
+        padding-right: 3rem;
+    }
+
+    .navbar-link p {
+        font-size: 1.2rem;
+    }
+}
